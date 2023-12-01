@@ -26,3 +26,19 @@ endif
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+#CRYPTFS
+TARGET_CRYPTFS_HW_PATH := device/xiaomi/mithorium-common/cryptfs_hw
+
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+TW_DEVICES := santoni land
+TWRP_DEVICES := santoni land
+
+# TWRP specific build flags
+TW_THEME := portrait_hdpi
+TW_EXTRA_LANGUAGES := true
+TW_INCLUDE_NTFS_3G := true
+TW_USE_TOOLBOX := true

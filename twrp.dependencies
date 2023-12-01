@@ -1,6 +1,12 @@
 [
   {
-    "repository": "android_device_xiaomi_mithorium-common",
+    "remote": "github.com",
+    "repository": "Mi-Thorium/twrp_device_xiaomi_mithorium-common",
     "target_path": "device/xiaomi/mithorium-common"
+  },
+  {
+    "remote": "github.com",
+    "repository": "Mi-Thorium/twrp_device_xiaomi_kernel-mithorium"
+    "target_path": "device/xiaomi/kernel-mithorium"
   }
 ]
